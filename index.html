@@ -58,7 +58,7 @@
                 </div>
                 <div class="form-group">
                   <div class="g-recaptcha" data-sitekey="6Le2GtcZAAAAAJCSlOt426Iq3uF0uzhFpqfSbN0S"></div>
-                  <div name="g-recaptcha-response"></div>
+                  <span id="captcha_error" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <button id="my-form-button" class="btn btn-primary">Submit</button>
@@ -176,6 +176,9 @@
       var form = document.getElementById("my-form");
       var button = document.getElementById("my-form-button");
       var status = document.getElementById("my-form-status");
+      let emailError = document.querySelector('#email_error');
+      let messageError = document.querySelector('#message_error');
+      let captchaError = document.querySelector('#captcha_error');
   
       // Success and Error functions for after the form is submitted
       
@@ -187,6 +190,7 @@
   
       function error() {
         status.innerHTML = "<span class='text-danger'>Oops! There was a problem.</span>";
+        captchaError.innerHTML = grecaptcha.getResponse();
       }
   
       // handle the form submission event
@@ -195,8 +199,6 @@
         ev.preventDefault();
         let email = document.querySelector('#email').value;
         let message = document.querySelector('#message').value;
-        let emailError = document.querySelector('#email_error');
-        let messageError = document.querySelector('#message_error');
         let valid = email.trim() !== "" && message.trim() !== "";
 
         if (email.trim() === "") {
