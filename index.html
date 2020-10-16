@@ -33,16 +33,16 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   </head>
-  <body class="bg-light">
-    <header>
+<body class="bg-light">
+<header>
   <div class="collapse bg-dark" id="navbarHeader">
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
+        <div class="col-12 col-md-7 col-lg-8 py-4">
           <h4 class="text-white">About</h4>
           <p class="text-light">Hi, my name is Steph, and thank you for visiting my portfolio. I love developing websites with Ruby on Rails, PHP, Bootstrap, Vue.js, jQuery, and many other frameworks. You can checkout my code and demos below, and contact me via the form on the right.</p>
         </div>
-        <div class="col-sm-4 offset-md-1 py-4 text-white">
+        <div class="col-md-5 col-lg-4 py-4 text-white">
           <h4 class="text-white">Contact</h4>
           <ul class="list-unstyled">
             <form id="my-form" action="https://formspree.io/mvovopzz" method="POST">
@@ -63,7 +63,6 @@
                 <div class="form-group">
                     <button id="my-form-button" class="btn btn-primary">Submit</button>
                 </div>
-                
                 <p id="my-form-status"></p>
             </form>
           </ul>
@@ -83,85 +82,7 @@
   </div>
 </header>
 
-<div class="d-flex flex-column justify-content-center h-100">
 
-    <div class="container my-auto">
-        <h3>Projects</h3>
-        <hr>
-      <div class="row mt-2">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="img/wiki.png" width="100%" height="225" alt="paws">
-            <div class="card-body">
-                <h5 class="card-title">Wiki App (Coming soon)</h5>
-              <p class="card-text">This app allows users to post and curate wikis in useful categories. Complete with a robust search, supervisor approval system, and file/folder-like navigation for easy access.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary not-allowed" disabled>Demo</button>
-                  <button class="btn btn-sm btn-outline-secondary not-allowed" disabled>Code</button>
-                </div>
-                <small class="text-muted">Ruby on Rails</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="img/attendanceapp.png" width="100%" height="225" alt="paws">
-            <div class="card-body">
-              <h5 class="card-title">Attendance App</h5>
-              <p class="card-text">Keeps track of employee work hours and provides useful reports for managers for payroll and record keeping. 
-                                   Some functionality was designed to work with older JavaScript versions particularly with older iPad 
-                                   devices running iOS 9.3.1 in an effort to reuse older technology and divert electronic waste.
-              </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a  href="http://attendanceapp.stephanemireault.ca/" class="btn btn-sm btn-outline-secondary">Demo</a>
-                  <a href="https://github.com/syrissel/attendance-app" class="btn btn-sm btn-outline-secondary">Code</a>
-                </div>
-                <small class="text-muted">PHP (Object-oriented)</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Cat.Cat!"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Cat.Cat!</text></svg>
-            <div class="card-body">
-              <p class="card-text">Coming soon...</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Demo</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Code</button>
-                </div>
-                <small class="text-muted">Ruby on Rails</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-</div>
-<footer class="text-muted bg-dark">
-  <div class="container text-light">
-    <div class="d-flex justify-content-center">
-        <ul class="list-unstyled text-center my-auto py-3">
-            <li><a class="text-light text-decoration-none" href="https://github.com/syrissel?tab=repositories">Github</a></li>
-            <li>
-                <a class="text-light text-decoration-none" href="#" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    About
-                </a>
-            </li>
-            <li>
-                <a class="text-light text-decoration-none" href="#" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    Contact
-                </a>
-            </li>
-        </ul>
-    </div>
-  </div>
-</footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
